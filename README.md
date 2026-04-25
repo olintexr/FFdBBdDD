@@ -37,7 +37,9 @@ Aquí se construye un puente entre la teoría formal y la comprensión práctica
 FFdBBdDD/
 │
 ├── 01-resumenes/
-│     └── 01-introduccion-a-las-bases-de-datos.md
+│     ├── 01-introduccion-a-las-bases-de-datos.md
+│     ├── 02-modelo-entidad-relacion.md
+│     └── 02.1-modelo-entidad-relacion-inscripciones.md
 │
 ├── 02-ejercicios/
 │

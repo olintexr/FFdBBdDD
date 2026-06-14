@@ -42,7 +42,8 @@ FFdBBdDD/
 │     ├── 02.1-modelo-entidad-relacion-inscripciones.md
 │     ├── 02.2-modelo-entidad-relacion-extension.md
 │     ├── 03-conversion-ER-a-relacional.md
-│     └── 04-introduccion-a-SQL.md
+│     ├── 04.1-introduccion-a-SQL.md
+│     └── 04.2-introduccion-a-SQL.md
 │
 ├── 02-ejercicios/
 │

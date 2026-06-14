@@ -41,7 +41,8 @@ FFdBBdDD/
 │     ├── 02-modelo-entidad-relacion.md
 │     ├── 02.1-modelo-entidad-relacion-inscripciones.md
 │     ├── 02.2-modelo-entidad-relacion-extension.md
-│     └── 03-introduccion-a-SQL.md
+│     ├── 03-conversion-ER-a-relacional.md
+│     └── 04-introduccion-a-SQL.md
 │
 ├── 02-ejercicios/
 │
@@ -132,8 +133,14 @@ Los conceptos están basados en el libro de Korth, pero **no se reproduce conten
 
 ## Estado del proyecto
 
-- Capítulos 01 y 02 iniciales completados.  
-- Resúmenes de introducción y modelo entidad-relación disponibles.  
-- Existe un resumen de SQL y un script asociado en `04-sql/03-introduccion-a-SQL.sql`.  
-- Próximo paso: ampliar ejercicios y diagramas en `02-ejercicios/` y `03-modelos/`.  
+- Resúmenes de los primeros capítulos disponibles en `01-resumenes/`, incluyendo:
+  - `01-introduccion-a-las-bases-de-datos.md`
+  - `02-modelo-entidad-relacion.md`
+  - `02.1-modelo-entidad-relacion-inscripciones.md`
+  - `02.2-modelo-entidad-relacion-extension.md`
+  - `03-conversion-ER-a-relacional.md`
+  - `04-introduccion-a-SQL.md`
+- Existe un script SQL asociado en `04-sql/03-introduccion-a-SQL.sql`.
+- Material de apoyo disponible en `05-material-de-apoyo/02-introduccion-modelo-relacional.xlsx`.
+- Próximo paso: ampliar ejercicios, actividades guiadas y diagramas en `02-ejercicios/` y `03-modelos/`.
 

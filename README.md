@@ -39,15 +39,19 @@ FFdBBdDD/
 ├── 01-resumenes/
 │     ├── 01-introduccion-a-las-bases-de-datos.md
 │     ├── 02-modelo-entidad-relacion.md
-│     └── 02.1-modelo-entidad-relacion-inscripciones.md
+│     ├── 02.1-modelo-entidad-relacion-inscripciones.md
+│     ├── 02.2-modelo-entidad-relacion-extension.md
+│     └── 03-introduccion-a-SQL.md
 │
 ├── 02-ejercicios/
 │
 ├── 03-modelos/
 │
 ├── 04-sql/
+│     └── 03-introduccion-a-SQL.sql
 │
 └── 05-material-de-apoyo/
+      └── 02-introduccion-modelo-relacional.xlsx
 ```
 
 ### 01-resumenes  
@@ -63,7 +67,7 @@ Diagramas, modelos entidad-relación, esquemas lógicos y físicos.
 Scripts SQL comentados y ejemplos prácticos.
 
 ### 05-material-de-apoyo  
-Recursos adicionales, tablas, imágenes y referencias permitidas.
+Recursos adicionales, tablas, hojas de cálculo y referencias permitidas.
 
 ---
 
@@ -128,7 +132,8 @@ Los conceptos están basados en el libro de Korth, pero **no se reproduce conten
 
 ## Estado del proyecto
 
-- Capítulo 01 completado.  
-- Estructura inicial creada.  
-- Próximo capítulo: Modelo Entidad‑Relación.  
+- Capítulos 01 y 02 iniciales completados.  
+- Resúmenes de introducción y modelo entidad-relación disponibles.  
+- Existe un resumen de SQL y un script asociado en `04-sql/03-introduccion-a-SQL.sql`.  
+- Próximo paso: ampliar ejercicios y diagramas en `02-ejercicios/` y `03-modelos/`.  
 

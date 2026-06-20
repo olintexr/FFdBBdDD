@@ -43,14 +43,15 @@ FFdBBdDD/
 │     ├── 02.2-modelo-entidad-relacion-extension.md
 │     ├── 03-conversion-ER-a-relacional.md
 │     ├── 04.1-introduccion-a-SQL.md
-│     └── 04.2-introduccion-a-SQL.md
+│     ├── 04.2-introduccion-a-SQL.md
+│     └── 04.3-introduccion-a-SQL.md
 │
 ├── 02-ejercicios/
 │
 ├── 03-modelos/
 │
 ├── 04-sql/
-│     └── 03-introduccion-a-SQL.sql
+│     └── 04.2-introduccion-a-SQL.sql
 │
 └── 05-material-de-apoyo/
       └── 02-introduccion-modelo-relacional.xlsx
@@ -134,14 +135,16 @@ Los conceptos están basados en el libro de Korth, pero **no se reproduce conten
 
 ## Estado del proyecto
 
-- Resúmenes de los primeros capítulos disponibles en `01-resumenes/`, incluyendo:
+- Resúmenes disponibles en `01-resumenes/`, incluyendo:
   - `01-introduccion-a-las-bases-de-datos.md`
   - `02-modelo-entidad-relacion.md`
   - `02.1-modelo-entidad-relacion-inscripciones.md`
   - `02.2-modelo-entidad-relacion-extension.md`
   - `03-conversion-ER-a-relacional.md`
-  - `04-introduccion-a-SQL.md`
-- Existe un script SQL asociado en `04-sql/03-introduccion-a-SQL.sql`.
+  - `04.1-introduccion-a-SQL.md`
+  - `04.2-introduccion-a-SQL.md`
+  - `04.3-introduccion-a-SQL.md`
+- Existe un script SQL asociado en `04-sql/04.2-introduccion-a-SQL.sql`.
 - Material de apoyo disponible en `05-material-de-apoyo/02-introduccion-modelo-relacional.xlsx`.
 - Próximo paso: ampliar ejercicios, actividades guiadas y diagramas en `02-ejercicios/` y `03-modelos/`.
 

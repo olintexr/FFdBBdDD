@@ -1,5 +1,5 @@
 # 05 - Normalizacion de Bases de Datos  
-De tabla caotica a Tercera Forma Normal
+De tabla caótica a Tercera Forma Normal
 
 -------------------------------------------------------------------------------
 
@@ -29,7 +29,7 @@ Nombre de la tabla: **InscripcionesRaw**
 
 La Primera Forma Normal exige:
 
-- valores atomicos en cada celda  
+- valores atómicos en cada celda  
 - sin listas  
 - sin grupos repetitivos  
 
@@ -47,9 +47,9 @@ Por lo tanto **no cumple 1FN**.
 ### 2.2. Dificultad para consultar
 
 - Contar cursos por alumno requiere partir cadenas.  
-- Buscar notas mayores a 80 en un curso especifico requiere combinar texto y posicion en listas.
+- Buscar notas mayores a 80 en un curso específico requiere combinar texto y posición en listas.
 
-### 2.3. Anomalias de actualizacion
+### 2.3. Anomalias de actualización
 
 - Cambiar el nombre de un curso implica modificar todas las listas donde aparezca.  
 - Cambiar el nombre de un profesor implica recorrer cadenas en varias filas.
@@ -58,7 +58,7 @@ Por lo tanto **no cumple 1FN**.
 
 ## 3. Dependencias funcionales del dominio
 
-Aunque la tabla este mal construida, el dominio si tiene dependencias claras:
+Aunque la tabla este mal construida, el dominio sí tiene dependencias claras:
 
 ```
 DF1: AlumnoID            --> AlumnoNombre, AlumnoApellido
@@ -68,13 +68,13 @@ DF4: (AlumnoID, CursoID) --> FechaInscripcion, NotaFinal
 
 ```
 
-Estas dependencias guiaran la normalizacion.
+Estas dependencias guiaran la normalización.
 
 -------------------------------------------------------------------------------
 
 ## 4. Paso 1: Llevar la tabla a Primera Forma Normal (1FN)
 
-### 4.1. Definicion de 1FN
+### 4.1. Definición de 1FN
 
 Una tabla esta en 1FN si:
 
@@ -109,11 +109,11 @@ Ahora la tabla **cumple 1FN**.
 
 ## 5. Paso 2: Segunda Forma Normal (2FN)
 
-### 5.1. Definicion de 2FN
+### 5.1. Definición de 2FN
 
 Una tabla esta en 2FN si:
 
-- esta en 1FN  
+- está en 1FN  
 - todos los atributos no clave dependen completamente de la clave primaria  
 - no hay dependencias parciales  
 
@@ -206,7 +206,7 @@ DF: CursoID --> ProfesorID --> ProfesorNombre
 
 ```
 
-La solucion ya se aplico: separar Profesor.
+La solucion ya se aplicó: separar Profesor.
 
 ### 6.3. Esquema final en 3FN
 
@@ -245,7 +245,7 @@ PK = (AlumnoID, CursoID)
 
 -------------------------------------------------------------------------------
 
-## 7. Bibliografia para formas normales avanzadas
+## 7. Bibliografía para formas normales avanzadas
 
 ### BCNF
 - Codd - A Relational Model of Data for Large Shared Data Banks  
@@ -258,10 +258,10 @@ PK = (AlumnoID, CursoID)
 - Fagin - Normal Forms and Relational Database Operators  
 
 ### Libros recomendados
-- Elmasri y Navathe - Fundamentals of Database Systems  
-- Connolly y Begg - Database Systems  
+- Connolly y Begg - Database Systems
 - Date - Database Design and Relational Theory  
-- Rodríguez Olinto - Trabajo de ascenso de 2004
+- Elmasri y Navathe - Fundamentals of Database Systems
+- Rodríguez Olinto - Trabajo de ascenso de 2004 (material entregado en clases)
 
 -------------------------------------------------------------------------------
 

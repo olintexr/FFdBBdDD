@@ -1,4 +1,7 @@
-# 05 - Normalizacion de Bases de Datos  
+# 05 - Normalización de Bases de Datos — Resumen (05)
+
+Ver también: [Normalización paso a paso](05.1-normalizacion.md)
+
 De tabla caótica a Tercera Forma Normal
 
 -------------------------------------------------------------------------------

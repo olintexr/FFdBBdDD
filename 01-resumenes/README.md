@@ -13,6 +13,7 @@ Listado de resúmenes y capítulos en esta carpeta:
 - [04.4 - Introducción a SQL — Agregación y GROUP BY](04.4-introduccion-a-SQL.md)
 - [05 - Normalización (Resumen)](05-normalizacion.md)
 - [05.1 - Normalización paso a paso (Detallado)](05.1-normalizacion.md)
+- [06 - Proyecto consolidado](06-proyecto-consolidado.md)
 
 Si deseas enlaces diferentes o un orden distinto, dime cómo prefieres que lo organice.
 

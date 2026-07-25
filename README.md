@@ -146,6 +146,9 @@ Los conceptos están basados en el libro de Korth, pero **no se reproduce conten
   - `04.2-introduccion-a-SQL.md`
   - `04.3-introduccion-a-SQL.md`
   - `04.4-introduccion-a-SQL.md`
+  - `05-normalizacion.md`
+  - `05.1-normalizacion.md`
+  - `06-proyecto-consolidado.md`
 - Existe un script SQL asociado en `04-sql/04.2-introduccion-a-SQL.sql`.
 - El capítulo 04.4 se presenta como material de apoyo en Markdown con ejemplos de agrupación y análisis.
 - Material de apoyo disponible en `05-material-de-apoyo/02-introduccion-modelo-relacional.xlsx`.

@@ -130,16 +130,34 @@ Las relaciones definen **cómo se vinculan las entidades** entre sí.
 ### **5.2. Tipos de relaciones**
 
 #### **1:1**
-Una instancia se relaciona con una sola instancia.  
-Ejemplo: una persona tiene un solo padre.
+Una instancia de una entidad se relaciona con una sola instancia de otra entidad.
+
+Ejemplo:
+- Una persona tiene una sola cédula de identidad.
+- Un estudiante tiene un único número de matrícula.
+- Un automóvil tiene un único chasis.
+
+En este caso, el vínculo es exclusivo y único en ambos sentidos.
 
 #### **1:N**
-Una instancia se relaciona con muchas.  
-Ejemplo: un alumno compra varios libros.
+Una instancia de una entidad puede relacionarse con muchas instancias de otra entidad, pero cada instancia de la otra entidad solo pertenece a una de la primera.
+
+Ejemplos:
+- Un profesor puede dictar muchos cursos, pero cada curso tiene un solo profesor.
+- Un cliente puede hacer muchas compras, pero cada compra pertenece a un solo cliente.
+- Una categoría puede tener muchos productos, pero cada producto pertenece a una sola categoría.
+
+Este tipo de relación es muy común en bases de datos.
 
 #### **N:N**
-Muchas instancias se relacionan con muchas.  
-Ejemplo: productos ↔ facturas.
+Muchas instancias de una entidad pueden relacionarse con muchas instancias de otra.
+
+Ejemplos:
+- Un estudiante puede inscribirse en muchos cursos y un curso puede tener muchos estudiantes.
+- Un producto puede aparecer en muchas facturas y una factura puede incluir muchos productos.
+- Un autor puede escribir muchos libros y un libro puede tener muchos autores.
+
+En este caso, normalmente se necesita una tabla intermedia para representar correctamente la relación.
 
 ---
 
@@ -196,26 +214,39 @@ El modelo E‑R es fundamental porque:
 
 ---
 
-## 9. Representación textual (ASCII)
+## 9. Representación visual (Mermaid)
 
+En lugar de usar texto ASCII, es posible representar el modelo E‑R con diagramas más modernos y legibles mediante Mermaid.
+
+```mermaid
+erDiagram
+    CLIENTE ||--o{ COMPRA : realiza
+    PRODUCTO ||--o{ COMPRA : incluye
+
+    CLIENTE {
+        int id_cliente PK
+        string nombre
+        string email
+    }
+
+    PRODUCTO {
+        int id_producto PK
+        string nombre
+        decimal precio
+    }
+
+    COMPRA {
+        date fecha
+        int cantidad
+        decimal total
+    }
 ```
-[Entidad] --(Relación)--> [OtraEntidad]
-```
 
-Ejemplo:
+Este tipo de diagrama permite ver de forma clara:
 
-```
-[Cliente] --(Compra)--> [Producto]
-
-Cliente:
-    id_cliente, nombre, email
-
-Producto:
-    id_producto, nombre, precio
-
-Compra:
-    fecha, cantidad, total
-```
+- las entidades involucradas,
+- las relaciones entre ellas,
+- y la cardinalidad de cada vínculo.
 
 ---
 
@@ -253,7 +284,7 @@ Compra:
 - Define 3 atributos para cada entidad, indicando dominio y rango.  
 - Crea 3 relaciones entre esas entidades, con cardinalidades.  
 - Clasifica cada entidad como fuerte o débil.  
-- Representa el modelo en ASCII.
+- Representa el modelo con un diagrama Mermaid o equivalente.
 
 ---
 
@@ -263,7 +294,7 @@ Compra:
 - Identificación de entidades  
 - Atributos con dominio y rango  
 - Relaciones con cardinalidades  
-- Diagrama E‑R en texto (ASCII)  
+- Diagrama E‑R visual (Mermaid)  
 - Ensayo (máx. 300 palabras): *¿Por qué es importante modelar antes de diseñar?*
 
 ### **Formato del correo**
